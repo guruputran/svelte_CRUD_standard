@@ -4,12 +4,12 @@
     {
       id: 1,
       title: "Sweetest framework ever",
-      category: "Church",
+      category: "College",
       content: "This is the content of this note",
     },
     {
       id: 2,
-      title: "intro to svelt",
+      title: "intro to svelt framework",
       category: "School",
       content:
         "This could be an intro to svelt,so you need to keep calm and see the magic",
@@ -72,7 +72,9 @@
       <div class="col-md-6">
         <div class="card p-2 shadow">
           <div class="card-body">
-            <h5 class="card-title mb-4">Add New Note</h5>
+            {#if isEdit === false}
+              <h5 class="card-title mb-4">Add New Note</h5>
+            {:else}<h5 class="card-title mb-4">Edit Note</h5>{/if}
             <form>
               <div class="form-group">
                 <label for="title">Title</label>
@@ -93,7 +95,7 @@
                 >
                   <option selected disaabled>Selecet a category</option>
                   <option value="School">School</option>
-                  <option value="Church">College</option>
+                  <option value="College">College</option>
                   <option value="Home">Home</option>
                 </select>
               </div>
