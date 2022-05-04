@@ -93,7 +93,7 @@
                 >
                   <option selected disaabled>Selecet a category</option>
                   <option value="School">School</option>
-                  <option value="Church">Church</option>
+                  <option value="Church">College</option>
                   <option value="Home">Home</option>
                 </select>
               </div>
